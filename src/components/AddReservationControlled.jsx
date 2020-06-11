@@ -63,7 +63,8 @@ class AddReservationControlled extends React.Component {
   };
   render() {
     return (
-      <Container>
+      <Container >
+        <Row >
         <h3>Reserve your table now!</h3>
 
         <LocalForm
@@ -71,7 +72,7 @@ class AddReservationControlled extends React.Component {
          
           onSubmit={values => this.handleSubmit(values)}
         >
-          <Row>
+          <Row className="mt-5">
             <FormGroup className="col-md-6">
               <Label for="name">Name</Label>
 
@@ -190,6 +191,7 @@ class AddReservationControlled extends React.Component {
         {this.state.errMess && this.state.errMess.length > 0 && (
           <Alert color="danger">We encountered a problem while processing your request: {this.state.errMess}</Alert>
         )}
+        </Row>
       </Container>
     );
   }

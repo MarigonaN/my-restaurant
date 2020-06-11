@@ -38,7 +38,7 @@ class RestNavigation extends Component {
             Strivestaurant - Striving For Food
           </Link>
           {this.props.location.pathname === "/dishdetails/2" && (
-            <h3 style={{ color: "whitesmoke" }}>"My favorite!"</h3>
+            <h3 style={{ color: "#10BDC8 " }}>"My favorite!"</h3>
           )}
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>

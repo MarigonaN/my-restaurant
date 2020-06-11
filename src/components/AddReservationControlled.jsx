@@ -24,12 +24,7 @@ class AddReservationControlled extends React.Component {
     };
   }
 
-  //   handleChange(values) {
-  //     //console.log("CHANGE", values);
-  //   }
-  //   handleUpdate(form) {
-  //     //console.log("UPDATE", form);
-  //   }
+ 
   handleSubmit = async values => {
     console.log("SUBMIT", values);
 
@@ -73,8 +68,7 @@ class AddReservationControlled extends React.Component {
 
         <LocalForm
           initialState={{ numberOfPersons: 1 }}
-          //   onUpdate={form => this.handleUpdate(form)}
-          //   onChange={values => this.handleChange(values)}
+         
           onSubmit={values => this.handleSubmit(values)}
         >
           <Row>

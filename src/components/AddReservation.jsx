@@ -83,15 +83,7 @@ class AddReservation extends React.Component {
         reservation[currentId] = input.currentTarget.value;
     }
 
-    // reservation[input.currentTarget.id] =
-    //   input.currentTarget.id === "numberOfPersons" ? parseInt(input.currentTarget.value) : input.currentTarget.value;
-
-    // if (input.currentTarget.id === "numberOfPersons") {
-    //   reservation[input.currentTarget.id] = parseInt(input.currentTarget.value);
-    // } else {
-    //   reservation[input.currentTarget.id] = input.currentTarget.value;
-    // }
-
+   
     this.setState({ reservation: reservation });
   };
 
